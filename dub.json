@@ -1,0 +1,19 @@
+{
+	"name": "webpushd",
+	"description": "D Web Push implementation",
+	"authors": [ "Jeffrey Buhr" ],
+	"copyright": "Copyright © 2021, Jeffrey Buhr",
+	"targetType": "library",
+	"dependencies": {
+		"vibe-d": "~>0.9.4",
+		"vibe-d:tls": ">=0.0.0"
+	},
+	"license": "MIT",
+	"sourceFiles": ["lib/ecec/libece.a"],
+	"subConfigurations": {
+		"vibe-d:tls": "openssl-1.1"
+	},
+	"versions": [
+		"OpenSSL11"
+  ]
+}
