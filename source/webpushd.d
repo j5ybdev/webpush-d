@@ -213,7 +213,7 @@ class VibeWebPusher : WebPusher {
          },
          (scope res) {           
             resp.statusCode = to!short(res.statusCode);
-            resp.contentType = res.headers["Content-Type"];
+            resp.contentType = res.headers.get("Content-Type", null);
             resp.respBody = res.bodyReader.readAllUTF8();
             res.destroy();
          }
